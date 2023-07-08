@@ -1,5 +1,7 @@
-const qwe = () => {
+const Works = () => {
   return (
-    <div>waeqwe</div>
+    <div>Works</div>
   )
 }
+
+export default Works
