@@ -28,7 +28,7 @@ const Navbar = () => {
 			className={`
 				${styles.paddingX}
 				w-full flex items-center py-5 fixed top-0 z-20
-				${scrolled ? "bg-primary" : "bg-transparent"}
+				${scrolled ? 'bg-primary' : 'bg-transparent'}
 			`}
 		>
 			<div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
@@ -36,7 +36,7 @@ const Navbar = () => {
 				to='/'
 				className='flex items-center gap-2'
 				onClick={() => {
-					setActive("")
+					setActive('')
 					window.scrollTo(0, 0)
 				}}
 			>
@@ -52,7 +52,7 @@ const Navbar = () => {
 					<li
 						key={nav.id}
 						className={
-							`${active === nav.title ? "text-white" : "text-secondary"} 
+							`${active === nav.title ? 'text-white' : 'text-secondary'} 
 							hover:text-white text-[18px] font-medium cursor-pointer`
 						}
 						onClick={() => setActive(nav.title)}
@@ -71,7 +71,7 @@ const Navbar = () => {
 				/>
 				<div
 					className={
-						`${!toggle ? "hidden" : "flex"}
+						`${!toggle ? 'hidden' : 'flex'}
 						p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`
 					}
 				>
@@ -81,7 +81,7 @@ const Navbar = () => {
 								key={nav.id}
 								className={
 									`font-poppins font-medium cursor-pointer text-[16px]
-									${active === nav.title ? "text-white" : "text-secondary"}`
+									${active === nav.title ? 'text-white' : 'text-secondary'}`
 								}
 								onClick={() => {
 									setToggle(!toggle)
